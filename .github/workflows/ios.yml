@@ -25,6 +25,7 @@ jobs:
           scheme: ${{ 'Food Truck' }}
         run: |
           xcodebuild clean archive \
+            -allowProvisioningUpdates \
             -scheme "$scheme" \
             -configuration release \
             -archivePath "$PWD/build/$scheme.xcarchive" \

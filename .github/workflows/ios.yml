@@ -22,7 +22,7 @@ jobs:
 
       - name: Archive for iOS Device
         env:
-          scheme: ${{ 'default' }}
+          scheme: ${{ 'Food Truck' }}
         run: |
           xcodebuild clean archive \
             -scheme "$scheme" \
@@ -32,7 +32,7 @@ jobs:
 
       - name: Export IPA
         env:
-          scheme: ${{ 'default' }}
+          scheme: ${{ 'Food Truck' }}
         run: |
           xcodebuild -exportArchive \
             -archivePath "$PWD/build/$scheme.xcarchive" \

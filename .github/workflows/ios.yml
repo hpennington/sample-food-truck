@@ -1,4 +1,4 @@
-name: iOS create IPA
+name: iOS starter workflow
 
 on:
   push:
@@ -17,25 +17,40 @@ jobs:
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
           default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
-          echo $default | cat >default
+          echo $default > default
           echo "Using default scheme: $default"
 
       - name: Archive for iOS Device
         env:
           scheme: ${{ 'default' }}
         run: |
-          if [ $scheme = "default" ]; then scheme=$(cat default); fi
-          if [ "$(ls -A | grep -i \\.xcworkspace\$)" ]; then filetype_parameter="workspace" && file_to_build="$(ls -A | grep -i \\.xcworkspace\$)"; else filetype_parameter="project" && file_to_build="$(ls -A | grep -i \\.xcodeproj\$)"; fi
-          xcodebuild clean archive -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -archivePath $PWD/build/$scheme.xcarchive -destination "generic/platform=iOS"
+          if [ "$scheme" = "default" ]; then scheme=$(cat default); fi
+          # Detect if it's a workspace or project and set parameters accordingly
+          if [ -f *.xcworkspace ]; then 
+            filetype_parameter="workspace" 
+            file_to_build=$(ls *.xcworkspace | head -n 1)
+          else 
+            filetype_parameter="project" 
+            file_to_build=$(ls *.xcodeproj | head -n 1)
+          fi
+          
+          xcodebuild clean archive \
+            -scheme "$scheme" \
+            -"$filetype_parameter" "$file_to_build" \
+            -archivePath "$PWD/build/$scheme.xcarchive" \
+            -destination "generic/platform=iOS"
 
       - name: Export IPA
         env:
           scheme: ${{ 'default' }}
         run: |
-          xcodebuild -exportArchive -archivePath $PWD/build/$scheme.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $PWD/build/ipa
+          xcodebuild -exportArchive \
+            -archivePath "$PWD/build/$scheme.xcarchive" \
+            -exportOptionsPlist ExportOptions.plist \
+            -exportPath "$PWD/build/ipa"
           
       - name: Upload IPA as Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ 'app.ipa' }}
+          name: app.ipa
           path: build/ipa/*.ipa

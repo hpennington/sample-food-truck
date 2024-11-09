@@ -24,7 +24,7 @@
 		E0510740283C187300FCE3E6 /* StoreSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C22282333C9007B925B /* StoreSupportView.swift */; };
 		E0510741283C187300FCE3E6 /* DonutEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37BF328233374007B925B /* DonutEditor.swift */; };
 		E0510742283C187300FCE3E6 /* SalesHistoryChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039E3532834AC4800508176 /* SalesHistoryChart.swift */; };
-		E0510746283C187300FCE3E6 /* RefundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C24282333C9007B925B /* RefundView.swift */; platformFilters = (ios, ); };
+		E0510746283C187300FCE3E6 /* RefundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C24282333C9007B925B /* RefundView.swift */; platformFilter = ios; };
 		E0510747283C187300FCE3E6 /* UnlockFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C21282333C9007B925B /* UnlockFeatureView.swift */; };
 		E0510748283C187300FCE3E6 /* CardNavigationHeaderLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09DC3642833222500040525 /* CardNavigationHeaderLabelStyle.swift */; };
 		E0510749283C187300FCE3E6 /* TruckDonutsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09DC3682833222700040525 /* TruckDonutsCard.swift */; };
@@ -49,7 +49,6 @@
 		E0510761283C187300FCE3E6 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37BE228233197007B925B /* AccountView.swift */; };
 		E0510763283C187300FCE3E6 /* FoodTruckKit in Frameworks */ = {isa = PBXBuildFile; productRef = E0510733283C187300FCE3E6 /* FoodTruckKit */; };
 		E0510765283C187300FCE3E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C37BC82823189D007B925B /* Assets.xcassets */; };
-		E0510767283C187300FCE3E6 /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E0C37C3228234145007B925B /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E08260F828CA97B000071BA9 /* TruckActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08260F728CA97B000071BA9 /* TruckActivityWidget.swift */; };
 		E08260FA28CAA2FD00071BA9 /* TruckActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08260F928CAA2FD00071BA9 /* TruckActivityAttributes.swift */; };
 		E08260FB28CAA30D00071BA9 /* TruckActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08260F928CAA2FD00071BA9 /* TruckActivityAttributes.swift */; };
@@ -66,7 +65,7 @@
 		E0B61CCA28416DFF00369D37 /* OrdersTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B61CC928416DFF00369D37 /* OrdersTable.swift */; };
 		E0B61CCB28416DFF00369D37 /* OrdersTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B61CC928416DFF00369D37 /* OrdersTable.swift */; };
 		E0C37BC92823189D007B925B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C37BC82823189D007B925B /* Assets.xcassets */; };
-		E0C37BDF28232B8B007B925B /* FoodTruckKit in Frameworks */ = {isa = PBXBuildFile; productRef = E0C37BDE28232B8B007B925B /* FoodTruckKit */; };
+		E0C37BDF28232B8B007B925B /* FoodTruckKit in Frameworks */ = {isa = PBXBuildFile; productRef = E0C37BDE28232B8B007B925B /* FoodTruckKit */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E0C37BE328233197007B925B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37BE028233197007B925B /* SignUpView.swift */; };
 		E0C37BEB282331AA007B925B /* DetailedMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37BE6282331AA007B925B /* DetailedMapView.swift */; };
 		E0C37BEC282331AA007B925B /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37BE7282331AA007B925B /* CityView.swift */; };
@@ -90,7 +89,7 @@
 		E0C37C27282333C9007B925B /* UnlockFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C21282333C9007B925B /* UnlockFeatureView.swift */; };
 		E0C37C28282333C9007B925B /* StoreSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C22282333C9007B925B /* StoreSupportView.swift */; };
 		E0C37C29282333C9007B925B /* SocialFeedPlusSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C23282333C9007B925B /* SocialFeedPlusSettings.swift */; };
-		E0C37C2A282333C9007B925B /* RefundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C24282333C9007B925B /* RefundView.swift */; platformFilters = (ios, ); };
+		E0C37C2A282333C9007B925B /* RefundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C24282333C9007B925B /* RefundView.swift */; platformFilter = ios; };
 		E0C37C2D2823375B007B925B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C2C2823375B007B925B /* App.swift */; };
 		E0C37C3428234145007B925B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C37C3328234145007B925B /* WidgetKit.framework */; };
 		E0C37C3628234145007B925B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C37C3528234145007B925B /* SwiftUI.framework */; };
@@ -102,7 +101,6 @@
 		E0C37C4E2823515A007B925B /* FoodTruckKit in Frameworks */ = {isa = PBXBuildFile; productRef = E0C37C4D2823515A007B925B /* FoodTruckKit */; };
 		E0C37C4F2823517F007B925B /* OrdersWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C4428234166007B925B /* OrdersWidget.swift */; };
 		E0C37C5028235184007B925B /* ParkingSpotAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C37C4228234161007B925B /* ParkingSpotAccessory.swift */; };
-		E0C37C5328236A47007B925B /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E0C37C3228234145007B925B /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E0C4A527283E8FD5007D5B83 /* ShowTopDonutsIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A522283E8FD4007D5B83 /* ShowTopDonutsIntent.swift */; };
 		E0C4A528283E8FD5007D5B83 /* ShowTopDonutsIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A522283E8FD4007D5B83 /* ShowTopDonutsIntent.swift */; };
 		E0C4A529283E8FD5007D5B83 /* ShowTopDonutsIntentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A523283E8FD4007D5B83 /* ShowTopDonutsIntentView.swift */; };
@@ -116,17 +114,12 @@
 		E0C4A535283EBD67007D5B83 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A534283EBD67007D5B83 /* FlowLayout.swift */; };
 		E0C4A536283EBD67007D5B83 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A534283EBD67007D5B83 /* FlowLayout.swift */; };
 		E0E829162845662200C89BF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84ACCDC1282D671600756FB7 /* Localizable.strings */; };
+		F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F86D7A162CDF02BB00C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E0510732283C187300FCE3E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E0C37BB92823189A007B925B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E0C37C3128234145007B925B;
-			remoteInfo = Widgets;
-		};
-		E0C37C5428236B18007B925B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E0C37BB92823189A007B925B /* Project object */;
 			proxyType = 1;
@@ -138,22 +131,10 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		E0510766283C187300FCE3E6 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E0510767283C187300FCE3E6 /* Widgets.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0C37C5228236A2E007B925B /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				E0C37C5328236A47007B925B /* Widgets.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,7 +143,7 @@
 
 /* Begin PBXFileReference section */
 		6178CE6D2845B07E00F240E8 /* CardNavigationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNavigationHeader.swift; sourceTree = "<group>"; };
-		7AE906C103F323E6CEF38CA5 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		7AE906C103F323E6CEF38CA5 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		84ACCDC5282D671600756FB7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84FE360B28404A410082F01A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84FE360C28404A830082F01A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -232,7 +213,8 @@
 		E0C4A525283E8FD5007D5B83 /* TopDonutSalesChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopDonutSalesChart.swift; sourceTree = "<group>"; };
 		E0C4A526283E8FD5007D5B83 /* TopFiveDonutsChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopFiveDonutsChart.swift; sourceTree = "<group>"; };
 		E0C4A534283EBD67007D5B83 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
-		F8C1D33EEFB6F5E9930C5AA2 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		F817FB282CDEF4C500C6F630 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.2.sdk/System/Library/Frameworks/ActivityKit.framework; sourceTree = DEVELOPER_DIR; };
+		F8C1D33EEFB6F5E9930C5AA2 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86D7A162CDF02BB00C6E29C /* ActivityKit.framework in Frameworks */,
 				E0510763283C187300FCE3E6 /* FoodTruckKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */,
 				E0C37BDF28232B8B007B925B /* FoodTruckKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +422,7 @@
 		E0C37BDD28232B8B007B925B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F817FB282CDEF4C500C6F630 /* ActivityKit.framework */,
 				E0C37C3328234145007B925B /* WidgetKit.framework */,
 				E0C37C3528234145007B925B /* SwiftUI.framework */,
 			);
@@ -495,12 +480,10 @@
 				E0C37BBD2823189A007B925B /* Sources */,
 				E0C37BBE2823189A007B925B /* Frameworks */,
 				E0C37BBF2823189A007B925B /* Resources */,
-				E0C37C5228236A2E007B925B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E0C37C5528236B18007B925B /* PBXTargetDependency */,
 			);
 			name = "Food Truck";
 			packageProductDependencies = (
@@ -538,7 +521,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					E0C37BC02823189A007B925B = {
@@ -726,11 +709,6 @@
 			target = E0C37C3128234145007B925B /* Widgets */;
 			targetProxy = E0510732283C187300FCE3E6 /* PBXContainerItemProxy */;
 		};
-		E0C37C5528236B18007B925B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E0C37C3128234145007B925B /* Widgets */;
-			targetProxy = E0C37C5428236B18007B925B /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -767,7 +745,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH6UQ2WJTH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -775,6 +753,7 @@
 				INFOPLIST_FILE = "App/Food-Truck-All-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Food Truck";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -786,11 +765,13 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Food-Truck${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vectorstudio.demoexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG EXTENDED_ALL";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -811,7 +792,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH6UQ2WJTH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -819,6 +800,7 @@
 				INFOPLIST_FILE = "App/Food-Truck-All-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Food Truck";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -830,11 +812,13 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Food-Truck${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vectorstudio.demoexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = EXTENDED_ALL;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -881,6 +865,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -945,6 +930,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -976,13 +962,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3EZ5UQTGVP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App/Food-Truck-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Food Truck";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -994,14 +981,16 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Food-Truck${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vectorstudio.foodtruckadhoc3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -1018,13 +1007,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3EZ5UQTGVP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App/Food-Truck-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Food Truck";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1036,14 +1026,16 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Food-Truck${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vectorstudio.foodtruckadhoc3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -1058,7 +1050,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH6UQ2WJTH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
@@ -1075,7 +1067,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1095,7 +1087,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH6UQ2WJTH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
@@ -1112,7 +1104,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

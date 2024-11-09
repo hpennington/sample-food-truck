@@ -27,7 +27,6 @@ jobs:
           xcodebuild clean archive \
             -scheme "$scheme" \
             -configuration release \
-            -"$filetype_parameter" "$file_to_build" \
             -archivePath "$PWD/build/$scheme.xcarchive" \
             -destination "generic/platform=iOS"
 

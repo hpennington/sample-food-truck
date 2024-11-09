@@ -1,4 +1,4 @@
-name: iOS starter workflow
+name: build iOS artifact 
 
 on:
   push:
@@ -24,18 +24,9 @@ jobs:
         env:
           scheme: ${{ 'default' }}
         run: |
-          if [ "$scheme" = "default" ]; then scheme=$(cat default); fi
-          # Detect if it's a workspace or project and set parameters accordingly
-          if [ -f *.xcworkspace ]; then 
-            filetype_parameter="workspace" 
-            file_to_build=$(ls *.xcworkspace | head -n 1)
-          else 
-            filetype_parameter="project" 
-            file_to_build=$(ls *.xcodeproj | head -n 1)
-          fi
-          
           xcodebuild clean archive \
             -scheme "$scheme" \
+            -configuration release \
             -"$filetype_parameter" "$file_to_build" \
             -archivePath "$PWD/build/$scheme.xcarchive" \
             -destination "generic/platform=iOS"

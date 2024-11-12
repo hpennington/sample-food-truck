@@ -6,6 +6,7 @@ A donut view.
 */
 
 import SwiftUI
+import Inertia
 
 public let donutThumbnailSize: Double = 128
 
@@ -51,6 +52,7 @@ public struct DonutView: View {
             .compositingGroup()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .vibeHello()
     }
 }
 

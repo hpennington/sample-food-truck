@@ -1,0 +1,49 @@
+# In host or Github
+
+xcodebuild clean archive \
+    -allowProvisioningUpdates \
+    -scheme "Food Truck" \
+    -configuration release \
+    -archivePath "$PWD/build/Food Truck.xcarchive" \
+    -destination "generic/platform=iOS" \
+    CODE_SIGN_IDENTITY="" \
+    CODE_SIGNING_ALLOWED="NO"
+
+xcodebuild -exportArchive \
+    -archivePath "$PWD/build/Food Truck.xcarchive" \
+    -exportPath "$PWD/build/ipa" \
+    -exportOptionsPlist ExportOptions.plist
+
+
+cp build/ipa/Food\ Truck.ipa ~/Library/Containers/com.vectorstudio.Vibe-Animation/Data/Inertia/
+
+# inside VM (BUT ACTUALLY USE PLAYCOVER)
+
+openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout mykey.key -out mycert.pem
+openssl pkcs12 -export -inkey mykey.key -in mycert.pem -out mycert.p12
+security import mycert.p12 -k ~/Library/Keychains/login.keychain
+unzip Food\ Truck.ipa -d Food\ Truck
+codesign -f -s "Inertia" Food\ Truck/Payload/Food\ Truck.app/Frameworks/*
+codesign -f -s "Inertia" Food\ Truck/Payload/Food\ Truck.app
+
+zip -qr Food\ Truck-resigned.ipa Food\ Truck/Payload
+
+zip -r Food\ Truck-resigned.ipa Food\ Truck
+
+
+xcodebuild clean archive \
+    -allowProvisioningUpdates \
+    -scheme "Graphnote" \
+    -configuration release \
+    -archivePath "$PWD/build/Graphnote.xcarchive" \
+    -destination "generic/platform=iOS" \
+    CODE_SIGN_IDENTITY="" \
+    CODE_SIGNING_ALLOWED="NO"
+
+xcodebuild -exportArchive \
+    -archivePath "$PWD/build/Graphnote.xcarchive" \
+    -exportPath "$PWD/build/ipa" \
+    -exportOptionsPlist ExportOptions.plist
+
+
+cp build/ipa/Graphnote.ipa ~/Library/Containers/com.vectorstudio.Vibe-Animation/Data/Inertia/

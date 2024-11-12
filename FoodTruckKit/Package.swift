@@ -23,11 +23,11 @@ let package = Package(
             targets: ["FoodTruckKit"]
         )
     ],
-    dependencies: [],
+    dependencies: [.package(name: "Inertia", path: "./Inertia")],
     targets: [
         .target(
             name: "FoodTruckKit",
-            dependencies: [],
+            dependencies: [.byName(name: "Inertia")],
             path: "Sources"
         )
     ]

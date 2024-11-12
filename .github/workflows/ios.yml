@@ -25,20 +25,22 @@ jobs:
           scheme: ${{ 'Food Truck' }}
         run: |
           xcodebuild clean archive \
-            -allowProvisioningUpdates \
-            -scheme "$scheme" \
-            -configuration release \
-            -archivePath "$PWD/build/$scheme.xcarchive" \
-            -destination "generic/platform=iOS"
+              -allowProvisioningUpdates \
+              -scheme "Food Truck" \
+              -configuration release \
+              -archivePath "$PWD/build/Food Truck.xcarchive" \
+              -destination "generic/platform=iOS"
+
 
       - name: Export IPA
         env:
           scheme: ${{ 'Food Truck' }}
         run: |
           xcodebuild -exportArchive \
-            -archivePath "$PWD/build/$scheme.xcarchive" \
+            -archivePath "$PWD/build/Food Truck.xcarchive" \
             -exportOptionsPlist ExportOptions.plist \
             -exportPath "$PWD/build/ipa"
+            -allowProvisioningUpdates
           
       - name: Upload IPA as Artifact
         uses: actions/upload-artifact@v3

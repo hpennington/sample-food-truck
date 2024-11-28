@@ -7,6 +7,7 @@ The donut gallery view.
 
 import SwiftUI
 import FoodTruckKit
+import Inertia
 
 struct DonutGallery: View {
     @ObservedObject var model: FoodTruckModel

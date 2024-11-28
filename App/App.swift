@@ -7,6 +7,7 @@ The single entry point for the Food Truck app on iOS and macOS.
 
 import SwiftUI
 import FoodTruckKit
+import Inertia
 
 /// The app's entry point.
 ///
@@ -27,7 +28,9 @@ struct FoodTruckApp: App {
     /// scene is used on macOS to insert a menu into the right side of the menu bar.
     var body: some Scene {
         WindowGroup {
-            ContentView(model: model, accountStore: accountStore)
+            VibeContainer(id: "animation1", hierarchyID: "animation1") {
+                ContentView(model: model, accountStore: accountStore)
+            }
         }
         #if os(macOS)
         .defaultSize(width: 1000, height: 650)

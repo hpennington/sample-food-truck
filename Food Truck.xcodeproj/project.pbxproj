@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -117,6 +117,10 @@
 		F82EDFDA2CE151C400312AE3 /* FoodTruckKit in Frameworks */ = {isa = PBXBuildFile; productRef = F82EDFD92CE151C400312AE3 /* FoodTruckKit */; };
 		F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F86D7A162CDF02BB00C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; };
+		F8D252FC2CF7DFE300C1EC53 /* Inertia in Frameworks */ = {isa = PBXBuildFile; productRef = F8D252FB2CF7DFE300C1EC53 /* Inertia */; };
+		F8D2530A2CF7EAAF00C1EC53 /* animation2.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D253082CF7EAAF00C1EC53 /* animation2.json */; };
+		F8D2530B2CF7EAAF00C1EC53 /* animation1.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D253072CF7EAAF00C1EC53 /* animation1.json */; };
+		F8D2530C2CF7EAAF00C1EC53 /* animation3.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D253092CF7EAAF00C1EC53 /* animation3.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +220,9 @@
 		E0C4A534283EBD67007D5B83 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		F817FB282CDEF4C500C6F630 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.2.sdk/System/Library/Frameworks/ActivityKit.framework; sourceTree = DEVELOPER_DIR; };
 		F8C1D33EEFB6F5E9930C5AA2 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		F8D253072CF7EAAF00C1EC53 /* animation1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = animation1.json; path = "../inertia-pro/example/demo.vibe/animations/animation1.json"; sourceTree = SOURCE_ROOT; };
+		F8D253082CF7EAAF00C1EC53 /* animation2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = animation2.json; path = "../inertia-pro/example/demo.vibe/animations/animation2.json"; sourceTree = SOURCE_ROOT; };
+		F8D253092CF7EAAF00C1EC53 /* animation3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = animation3.json; path = "../inertia-pro/example/demo.vibe/animations/animation3.json"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +242,7 @@
 				F82EDFDA2CE151C400312AE3 /* FoodTruckKit in Frameworks */,
 				F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */,
 				E0C37BDF28232B8B007B925B /* FoodTruckKit in Frameworks */,
+				F8D252FC2CF7DFE300C1EC53 /* Inertia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +304,9 @@
 		E0C37BB82823189A007B925B = {
 			isa = PBXGroup;
 			children = (
+				F8D253072CF7EAAF00C1EC53 /* animation1.json */,
+				F8D253082CF7EAAF00C1EC53 /* animation2.json */,
+				F8D253092CF7EAAF00C1EC53 /* animation3.json */,
 				E0BCD66B2823850F000FDF0D /* README.md */,
 				E0C37BC32823189A007B925B /* App */,
 				E0C37BDC282326EF007B925B /* FoodTruckKit */,
@@ -491,6 +502,7 @@
 			packageProductDependencies = (
 				E0C37BDE28232B8B007B925B /* FoodTruckKit */,
 				F82EDFD92CE151C400312AE3 /* FoodTruckKit */,
+				F8D252FB2CF7DFE300C1EC53 /* Inertia */,
 			);
 			productName = "Food Truck";
 			productReference = E0C37BC12823189A007B925B /* Food Truck.app */;
@@ -546,6 +558,7 @@
 			);
 			mainGroup = E0C37BB82823189A007B925B;
 			packageReferences = (
+				F8D252FA2CF7DFE300C1EC53 /* XCLocalSwiftPackageReference "../inertia-pro/runtime-swift/Inertia" */,
 			);
 			productRefGroup = E0C37BC22823189A007B925B /* Products */;
 			projectDirPath = "";
@@ -574,6 +587,9 @@
 			files = (
 				E0C37BC92823189D007B925B /* Assets.xcassets in Resources */,
 				84ACCDC3282D671600756FB7 /* Localizable.strings in Resources */,
+				F8D2530A2CF7EAAF00C1EC53 /* animation2.json in Resources */,
+				F8D2530B2CF7EAAF00C1EC53 /* animation1.json in Resources */,
+				F8D2530C2CF7EAAF00C1EC53 /* animation3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,7 +781,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphone*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -776,7 +792,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG EXTENDED_ALL";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -812,7 +828,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphone*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -823,7 +839,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = EXTENDED_ALL;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -981,7 +997,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphone*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -992,7 +1008,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1026,7 +1042,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphone*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -1037,7 +1053,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1060,7 +1076,7 @@
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1074,7 +1090,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,4";
@@ -1097,7 +1113,7 @@
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1111,7 +1127,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,4";
@@ -1160,6 +1176,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		F8D252FA2CF7DFE300C1EC53 /* XCLocalSwiftPackageReference "../inertia-pro/runtime-swift/Inertia" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../inertia-pro/runtime-swift/Inertia";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		E0510733283C187300FCE3E6 /* FoodTruckKit */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1176,6 +1199,10 @@
 		F82EDFD92CE151C400312AE3 /* FoodTruckKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FoodTruckKit;
+		};
+		F8D252FB2CF7DFE300C1EC53 /* Inertia */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Inertia;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

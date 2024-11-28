@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -35,7 +36,7 @@ struct ParkingSpotShowcaseView: View {
                     topSafeAreaInset: topSafeAreaInset
                 )
             }
-        }
+        }.vibeHello()
     }
 }
 

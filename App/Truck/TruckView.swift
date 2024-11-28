@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -66,7 +67,7 @@ struct TruckView: View {
             default:
                 DonutGallery(model: model)
             }
-        }
+        }.vibeHello()
     }
 
     // MARK: - Cards
@@ -115,7 +116,7 @@ struct TruckView_Previews: PreviewProvider {
         @StateObject private var model = FoodTruckModel()
         @State private var navigationSelection: Panel? = Panel.truck
         var body: some View {
-            TruckView(model: model, navigationSelection: $navigationSelection)
+            TruckView(model: model, navigationSelection: $navigationSelection).vibeHello()
         }
     }
     static var previews: some View {

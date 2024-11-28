@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -45,7 +46,7 @@ struct TruckSocialFeedCard: View {
             Spacer()
         }
         .padding(10)
-        .background()
+        .background().vibeHello()
     }
 }
 

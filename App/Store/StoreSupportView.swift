@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -34,7 +35,7 @@ struct StoreSupportView: View {
                 }
             }
         }
-        .navigationTitle("Help with purchases")
+        .navigationTitle("Help with purchases").vibeHello()
     }
     
 }

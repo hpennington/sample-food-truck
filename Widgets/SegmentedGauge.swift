@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -23,7 +24,7 @@ public struct SegmentedGauge<Label: View>: View {
 
     public var body: some View {
         Gauge(value: Double(value), in: 0.0...Double(total), label: label)
-            .gaugeStyle(SegmentedGaugeStyle(total: total))
+            .gaugeStyle(SegmentedGaugeStyle(total: total)).vibeHello()
     }
 }
 
@@ -95,7 +96,7 @@ struct SegmentedGaugeStyle: GaugeStyle {
 
         var body: some View {
             Segment(cornerRadius: metrics.cornerRadius, position: position, layoutDirection: layoutDirection)
-                .fill(.tint)
+                .fill(.tint).vibeHello()
         }
 
         struct Segment: Shape {

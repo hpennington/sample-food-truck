@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -80,7 +81,7 @@ struct OrderDetailView: View {
                 .labelStyle(.iconOnly)
                 .disabled(order.isComplete)
             }
-        }
+        }.vibeHello()
     }
     
     #if canImport(ActivityKit)
@@ -148,7 +149,7 @@ struct OrderDetailView_Previews: PreviewProvider {
     struct Preview: View {
         @State private var order = Order.preview
         var body: some View {
-            OrderDetailView(order: $order)
+            OrderDetailView(order: $order).vibeHello()
         }
     }
     

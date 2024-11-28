@@ -66,7 +66,7 @@ struct DonutGallery: View {
         }
         .navigationDestination(for: String.self) { _ in
             DonutEditor(donut: $model.newDonut)
-        }
+        }.vibeHello()
     }
     
     var grid: some View {
@@ -173,7 +173,7 @@ struct DonutBakery_Previews: PreviewProvider {
         @StateObject private var model = FoodTruckModel.preview
 
         var body: some View {
-            DonutGallery(model: model)
+            DonutGallery(model: model).vibeHello()
         }
     }
 

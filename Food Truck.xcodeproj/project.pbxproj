@@ -114,10 +114,10 @@
 		E0C4A535283EBD67007D5B83 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A534283EBD67007D5B83 /* FlowLayout.swift */; };
 		E0C4A536283EBD67007D5B83 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4A534283EBD67007D5B83 /* FlowLayout.swift */; };
 		E0E829162845662200C89BF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84ACCDC1282D671600756FB7 /* Localizable.strings */; };
+		F819FA732CF8C6A7000FF0E2 /* Inertia in Frameworks */ = {isa = PBXBuildFile; productRef = F819FA722CF8C6A7000FF0E2 /* Inertia */; };
 		F82EDFDA2CE151C400312AE3 /* FoodTruckKit in Frameworks */ = {isa = PBXBuildFile; productRef = F82EDFD92CE151C400312AE3 /* FoodTruckKit */; };
 		F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F86D7A162CDF02BB00C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; };
-		F8D252FC2CF7DFE300C1EC53 /* Inertia in Frameworks */ = {isa = PBXBuildFile; productRef = F8D252FB2CF7DFE300C1EC53 /* Inertia */; };
 		F8D2530A2CF7EAAF00C1EC53 /* animation2.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D253082CF7EAAF00C1EC53 /* animation2.json */; };
 		F8D2530B2CF7EAAF00C1EC53 /* animation1.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D253072CF7EAAF00C1EC53 /* animation1.json */; };
 		F8D2530C2CF7EAAF00C1EC53 /* animation3.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D253092CF7EAAF00C1EC53 /* animation3.json */; };
@@ -242,7 +242,7 @@
 				F82EDFDA2CE151C400312AE3 /* FoodTruckKit in Frameworks */,
 				F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */,
 				E0C37BDF28232B8B007B925B /* FoodTruckKit in Frameworks */,
-				F8D252FC2CF7DFE300C1EC53 /* Inertia in Frameworks */,
+				F819FA732CF8C6A7000FF0E2 /* Inertia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +502,7 @@
 			packageProductDependencies = (
 				E0C37BDE28232B8B007B925B /* FoodTruckKit */,
 				F82EDFD92CE151C400312AE3 /* FoodTruckKit */,
-				F8D252FB2CF7DFE300C1EC53 /* Inertia */,
+				F819FA722CF8C6A7000FF0E2 /* Inertia */,
 			);
 			productName = "Food Truck";
 			productReference = E0C37BC12823189A007B925B /* Food Truck.app */;
@@ -1196,13 +1196,14 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = FoodTruckKit;
 		};
+		F819FA722CF8C6A7000FF0E2 /* Inertia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8D252FA2CF7DFE300C1EC53 /* XCLocalSwiftPackageReference "../inertia-pro/runtime-swift/Inertia" */;
+			productName = Inertia;
+		};
 		F82EDFD92CE151C400312AE3 /* FoodTruckKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FoodTruckKit;
-		};
-		F8D252FB2CF7DFE300C1EC53 /* Inertia */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Inertia;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

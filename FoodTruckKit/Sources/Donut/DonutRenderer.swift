@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -46,7 +47,7 @@ public struct DonutRenderer: View {
                 Self.thumbnails[donut.id] = image
                 imageIsReady = true
             }
-        }
+        }.vibeHello()
     }
 }
 

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -30,7 +31,7 @@ struct CityWeatherCard: View {
         .padding()
         .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
         .frame(maxWidth: 400, alignment: .trailing)
-        .padding()
+        .padding().vibeHello()
     }
 }
 

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -57,7 +58,7 @@ struct DetailColumn_Previews: PreviewProvider {
         @StateObject private var model = FoodTruckModel.preview
         
         var body: some View {
-            DetailColumn(selection: $selection, model: model)
+            DetailColumn(selection: $selection, model: model).vibeHello()
         }
     }
     static var previews: some View {

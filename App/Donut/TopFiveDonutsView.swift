@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -42,7 +43,7 @@ struct TopFiveDonutsView: View {
             .padding()
         }
         .navigationTitle("Top 5 Donuts")
-        .background()
+        .background().vibeHello()
     }
 }
 
@@ -50,7 +51,7 @@ struct TopFiveDonutsView_Previews: PreviewProvider {
     struct Preview: View {
         @StateObject private var model = FoodTruckModel()
         var body: some View {
-            TopFiveDonutsView(model: model)
+            TopFiveDonutsView(model: model).vibeHello()
         }
     }
     static var previews: some View {

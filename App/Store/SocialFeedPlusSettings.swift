@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -67,7 +68,7 @@ struct SocialFeedPlusSettings: View {
             if controller.entitledSubscription == nil {
                 dismiss()
             }
-        }
+        }.vibeHello()
     }
 }
 
@@ -131,7 +132,7 @@ struct SubscriptionStatusView: View {
             #if os(iOS)
             .manageSubscriptionsSheet(isPresented: $manageSubscriptionIsPresented)
             #endif
-        }
+        }.vibeHello()
     }
     
 }

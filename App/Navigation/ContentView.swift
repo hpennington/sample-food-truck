@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -81,7 +82,7 @@ struct ContentView_Previews: PreviewProvider {
         @StateObject private var model = FoodTruckModel()
         @StateObject private var accountStore = AccountStore()
         var body: some View {
-            ContentView(model: model, accountStore: accountStore)
+            ContentView(model: model, accountStore: accountStore).vibeHello()
         }
     }
     static var previews: some View {

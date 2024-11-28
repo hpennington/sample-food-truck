@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -18,7 +19,7 @@ struct ParkingSpotAccessory: Widget {
         .supportedFamilies([.accessoryRectangular, .accessoryInline, .accessoryCircular])
         #endif
         .configurationDisplayName("Parking Spot")
-        .description("Information about your Food Truck's parking spot.")
+        .description("Information about your Food Truck's parking spot.").vibeHello()
     }
     
     struct Provider: TimelineProvider {
@@ -70,7 +71,7 @@ struct ParkingSpotAccessoryView: View {
         #endif
         default:
             Text("Unsupported!")
-        }
+        }.vibeHello()
     }
 }
 

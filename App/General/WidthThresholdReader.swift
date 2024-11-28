@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -33,7 +34,7 @@ struct WidthThresholdReader<Content: View>: View {
             )
             content(compressionProxy)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-        }
+        }.vibeHello()
     }
                 
     func isCompact(width: Double) -> Bool {

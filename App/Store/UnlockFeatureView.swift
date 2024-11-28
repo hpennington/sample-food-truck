@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -104,7 +105,7 @@ struct UnlockFeatureExpandedView: View {
             .foregroundColor(.secondary)
             .padding(.top)
             .padding(.trailing, 10)
-        }
+        }.vibeHello()
     }
     
 }
@@ -133,7 +134,7 @@ struct UnlockFeatureSimpleView: View {
             .buttonBorderShape(.capsule)
             #endif
         }
-        .padding()
+        .padding().vibeHello()
     }
     
 }

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -47,7 +48,7 @@ struct RecommendedParkingSpotCard: View {
             .labelStyle(RecommendedSpotSummaryLabelStyle())
         }
         .padding()
-        .background(.quaternary.opacity(0.5), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .background(.quaternary.opacity(0.5), in: RoundedRectangle(cornerRadius: 20, style: .continuous)).vibeHello()
     }
 }
 

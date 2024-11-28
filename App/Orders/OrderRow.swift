@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -27,7 +28,7 @@ struct OrderRow: View {
                 }
             
             Text(order.id)
-        }
+        }.vibeHello()
     }
 }
 
@@ -35,7 +36,7 @@ struct OrderRow_Previews: PreviewProvider {
     struct Preview: View {
         @StateObject private var model = FoodTruckModel()
         var body: some View {
-            OrderRow(order: .preview)
+            OrderRow(order: .preview).vibeHello()
         }
     }
     static var previews: some View {

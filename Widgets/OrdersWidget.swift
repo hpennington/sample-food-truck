@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -32,7 +33,7 @@ struct OrdersWidget: Widget {
         }
         .supportedFamilies(OrdersWidget.supportedFamilies)
         .configurationDisplayName("Orders")
-        .description("Information about Food Truck's orders and daily quotas.")
+        .description("Information about Food Truck's orders and daily quotas.").vibeHello()
     }
     
     struct Provider: TimelineProvider {
@@ -137,7 +138,7 @@ struct OrdersWidgetView: View {
         #endif
         default:
             Text("Unsupported!")
-        }
+        }.vibeHello()
     }
 }
 

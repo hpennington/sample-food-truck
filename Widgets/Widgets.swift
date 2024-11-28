@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -25,7 +26,7 @@ struct Widgets: WidgetBundle {
         // MARK: - Widgets
         #if os(iOS) || os(macOS)
         DailyDonutWidget()
-        #endif
+        #endif.vibeHello()
     }
 }
  

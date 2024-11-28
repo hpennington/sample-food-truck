@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -70,7 +71,7 @@ struct OrderCompleteView: View {
                     }
                 }
             }
-        }
+        }.vibeHello()
     }
     
     func toggleBoxAnimation() async {

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -14,7 +15,7 @@ struct ShowTopDonutsIntentView: View {
     
     var body: some View {
         TopFiveDonutsChart(model: model, timeframe: timeframe)
-            .padding()
+            .padding().vibeHello()
     }
 }
 

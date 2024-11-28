@@ -1,4 +1,5 @@
 import XCTest
+import Inertia
 @testable import Vibe
 
 final class VibeTests: XCTestCase {

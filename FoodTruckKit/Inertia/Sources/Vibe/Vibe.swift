@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Inertia
 
 public typealias VibeID = String
 //
@@ -263,7 +264,7 @@ struct VibeHello<Content: View>: View {
                         connected = true
                     }
                 }
-            }
+            }.vibeHello()
     }
 }
 

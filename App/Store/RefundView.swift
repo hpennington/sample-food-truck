@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -60,7 +61,7 @@ struct RefundView: View {
                 dismiss()
             }
         }
-        .navigationTitle("Refund purchases")
+        .navigationTitle("Refund purchases").vibeHello()
     }
     
 }
@@ -95,7 +96,7 @@ struct TransactionRowView: View {
         .task { @MainActor in
             product = await StoreActor.shared
                 .product(identifiedBy: transaction.productID)
-        }
+        }.vibeHello()
     }
     
 }

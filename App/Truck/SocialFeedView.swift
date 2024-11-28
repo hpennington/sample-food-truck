@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -66,7 +67,7 @@ struct SocialFeedView: View {
                     .frame(minWidth: 300, minHeight: 350)
                     #endif
             }
-        }
+        }.vibeHello()
     }
     
 }

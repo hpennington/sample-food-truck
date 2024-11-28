@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -94,7 +95,7 @@ struct AccountView: View {
         }
         .alert(isPresented: $isSignOutAlertPresented) {
             signOutAlert
-        }
+        }.vibeHello()
     }
     
     private func signIn() async {
@@ -119,7 +120,7 @@ struct AccountView_Previews: PreviewProvider {
         
         var body: some View {
             AccountView(model: model)
-                .environmentObject(accountStore)
+                .environmentObject(accountStore).vibeHello()
         }
     }
 

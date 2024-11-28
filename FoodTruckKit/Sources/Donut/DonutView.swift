@@ -52,7 +52,7 @@ public struct DonutView: View {
             .compositingGroup()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .vibeHello()
+        .vibeHello().vibeHello()
     }
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -116,6 +116,7 @@
 		E0E829162845662200C89BF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84ACCDC1282D671600756FB7 /* Localizable.strings */; };
 		F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F86D7A162CDF02BB00C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; };
+		F899F6522D03A87500CE9EEB /* Inertia in Frameworks */ = {isa = PBXBuildFile; productRef = F899F6512D03A87500CE9EEB /* Inertia */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F899F6522D03A87500CE9EEB /* Inertia in Frameworks */,
 				F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */,
 				E0C37BDF28232B8B007B925B /* FoodTruckKit in Frameworks */,
 			);
@@ -488,6 +490,7 @@
 			name = "Food Truck";
 			packageProductDependencies = (
 				E0C37BDE28232B8B007B925B /* FoodTruckKit */,
+				F899F6512D03A87500CE9EEB /* Inertia */,
 			);
 			productName = "Food Truck";
 			productReference = E0C37BC12823189A007B925B /* Food Truck.app */;
@@ -542,6 +545,9 @@
 				ar,
 			);
 			mainGroup = E0C37BB82823189A007B925B;
+			packageReferences = (
+				F899F6502D03A87500CE9EEB /* XCLocalSwiftPackageReference "../inertia-pro/runtime-swift/Inertia" */,
+			);
 			productRefGroup = E0C37BC22823189A007B925B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -760,7 +766,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphone*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -807,7 +813,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphone*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -976,7 +982,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphone*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -1021,7 +1027,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphone*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -1055,7 +1061,7 @@
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1092,7 +1098,7 @@
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1155,6 +1161,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		F899F6502D03A87500CE9EEB /* XCLocalSwiftPackageReference "../inertia-pro/runtime-swift/Inertia" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../inertia-pro/runtime-swift/Inertia";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		E0510733283C187300FCE3E6 /* FoodTruckKit */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1167,6 +1180,10 @@
 		E0C37C4D2823515A007B925B /* FoodTruckKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FoodTruckKit;
+		};
+		F899F6512D03A87500CE9EEB /* Inertia */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Inertia;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -68,7 +69,7 @@ struct SalesHistoryView: View {
             }
         }
         .navigationTitle("Sales History")
-        .background()
+        .background().inertiaEditable()
     }
     
     var totalSales: Int {
@@ -131,7 +132,7 @@ struct StatisticsView_Previews: PreviewProvider {
     struct Preview: View {
         @StateObject private var model = FoodTruckModel()
         var body: some View {
-            SalesHistoryView(model: model)
+            SalesHistoryView(model: model).inertiaEditable()
         }
     }
     

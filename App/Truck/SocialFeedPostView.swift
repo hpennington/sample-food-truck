@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -48,7 +49,7 @@ struct SocialFeedPostView: View {
                 }
             }
         }
-        .listRowInsets(EdgeInsets(top: 12, leading: 8, bottom: 12, trailing: 8))
+        .listRowInsets(EdgeInsets(top: 12, leading: 8, bottom: 12, trailing: 8)).inertiaEditable()
     }
     
     var dateString: String {

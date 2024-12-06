@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -80,7 +81,7 @@ struct DonutGalleryGrid: View {
                 .buttonStyle(.plain)
             }
         }
-        .padding()
+        .padding().inertiaEditable()
     }
 }
 
@@ -93,7 +94,7 @@ struct DonutGalleryGrid_Previews: PreviewProvider {
                 ScrollView {
                     DonutGalleryGrid(donuts: donuts, width: geometryProxy.size.width)
                 }
-            }
+            }.inertiaEditable()
         }
     }
     

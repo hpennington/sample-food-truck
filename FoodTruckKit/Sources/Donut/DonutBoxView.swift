@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -44,7 +45,7 @@ public struct DonutBoxView<Content: View>: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-        }
+        }.inertiaEditable()
     }
 }
 
@@ -66,7 +67,7 @@ struct DonutBoxView_Previews: PreviewProvider {
                     withAnimation(.spring(response: 0.25, dampingFraction: 1)) {
                         isOpen.toggle()
                     }
-                }
+                }.inertiaEditable()
         }
     }
     

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -45,7 +46,7 @@ struct TruckActivityWidget: Widget {
             .contentMargins([.leading, .top, .bottom], 6, for: .compactLeading)
             .contentMargins(.all, 6, for: .minimal)
             .widgetURL(URL(string: "foodtruck://order/\(context.attributes.orderID)"))
-        }
+        }.inertiaEditable()
     }
 }
 
@@ -69,14 +70,14 @@ struct LiveActivityView: View {
         .padding([.leading, .top, .bottom])
         .padding(.trailing, 32)
         .activityBackgroundTint(colorScheme == .light ? Color("LiveActivityBackground") : Color("AccentColorDimmed"))
-        .activitySystemActionForegroundColor(.primary)
+        .activitySystemActionForegroundColor(.primary).inertiaEditable()
     }
 }
 
 struct ExpandedLeadingView: View {
     var body: some View {
         Image("IslandExpandedIcon")
-            .clipShape(ContainerRelativeShape())
+            .clipShape(ContainerRelativeShape()).inertiaEditable()
     }
 }
 
@@ -97,7 +98,7 @@ struct OrderInfoView: View {
                 .fontWeight(.medium)
                 .foregroundStyle(.secondary)
                 .opacity(isLuminanceReduced ? 0.5 : 1.0)
-        }
+        }.inertiaEditable()
     }
 }
 
@@ -120,7 +121,7 @@ struct OrderTimerView: View {
                 .fontWeight(.medium)
                 .foregroundStyle(.secondary)
                 .opacity(isLuminanceReduced ? 0.5 : 1.0)
-        }
+        }.inertiaEditable()
     }
 }
 
@@ -134,7 +135,7 @@ struct ExpandedTrailingView: View {
             Spacer()
             OrderTimerView(timerRange: timerInterval)
         }
-        .tint(Color("LightIndigo"))
+        .tint(Color("LightIndigo")).inertiaEditable()
     }
 }
 

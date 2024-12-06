@@ -13,9 +13,9 @@ let package = Package(
     name: "FoodTruckKit",
     defaultLocalization: "en",
     platforms: [
-        .macOS("13.3"),
-        .iOS("16.4"),
-        .macCatalyst("16.4")
+        .macOS("14.0"),
+        .iOS("17.0"),
+        .macCatalyst("17.0")
     ],
     products: [
         .library(
@@ -23,11 +23,11 @@ let package = Package(
             targets: ["FoodTruckKit"]
         )
     ],
-    dependencies: [],
+    dependencies: [.package(path: "/Users/haydenpennington/Developer/inertia-pro/runtime-swift/Inertia")],
     targets: [
         .target(
             name: "FoodTruckKit",
-            dependencies: [],
+            dependencies: ["Inertia"],
             path: "Sources"
         )
     ]

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -65,7 +66,7 @@ struct DonutGallery: View {
         }
         .navigationDestination(for: String.self) { _ in
             DonutEditor(donut: $model.newDonut)
-        }
+        }.inertiaEditable()
     }
     
     var grid: some View {
@@ -172,7 +173,7 @@ struct DonutBakery_Previews: PreviewProvider {
         @StateObject private var model = FoodTruckModel.preview
 
         var body: some View {
-            DonutGallery(model: model)
+            DonutGallery(model: model).inertiaEditable()
         }
     }
 

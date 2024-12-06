@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -30,7 +31,7 @@ struct TruckDonutsCard: View {
             .frame(minHeight: 180, maxHeight: .infinity)
         }
         .padding(10)
-        .background()
+        .background().inertiaEditable()
     }
     
     struct DonutLatticeLayout: Layout {

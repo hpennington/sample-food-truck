@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -42,7 +43,7 @@ struct TruckWeatherCard: View {
             } catch {
                 print("Could not load weather", error.localizedDescription)
             }
-        }
+        }.inertiaEditable()
     }
     
     var chart: some View {

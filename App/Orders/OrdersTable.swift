@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -86,7 +87,7 @@ struct OrdersTable: View {
                     TableRow(order)
                 }
             }
-        }
+        }.inertiaEditable()
     }
 }
 
@@ -103,7 +104,7 @@ struct OrdersTable_Previews: PreviewProvider {
                 selection: .constant([]),
                 completedOrder: .constant(nil),
                 searchText: .constant("")
-            )
+            ).inertiaEditable()
         }
     }
     

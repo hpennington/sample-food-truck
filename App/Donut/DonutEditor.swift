@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -165,7 +166,7 @@ struct DonutEditor_Previews: PreviewProvider {
         @State private var donut = Donut.preview
 
         var body: some View {
-            DonutEditor(donut: $donut)
+            DonutEditor(donut: $donut).inertiaEditable()
         }
     }
 

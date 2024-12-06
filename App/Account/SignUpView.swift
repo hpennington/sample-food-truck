@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -97,7 +98,7 @@ struct SignUpView: View {
         }
         .onAppear {
             focusedElement = .username
-        }
+        }.inertiaEditable()
     }
 
     private func signUp() async {
@@ -127,7 +128,7 @@ struct SignUpView_Previews: PreviewProvider {
 
         var body: some View {
             SignUpView(model: model)
-                .environmentObject(accountStore)
+                .environmentObject(accountStore).inertiaEditable()
         }
     }
 

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -148,7 +149,7 @@ struct CityView: View {
                     cloudCover = 0.15
                 }
             }
-        }
+        }.inertiaEditable()
     }
 }
 

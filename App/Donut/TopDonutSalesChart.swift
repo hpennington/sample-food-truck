@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -29,7 +30,7 @@ struct TopDonutSalesChart: View {
                 .font(.headline)
             
             chart
-        }
+        }.inertiaEditable()
     }
     
     var chart: some View {

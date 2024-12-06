@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -107,7 +108,7 @@ struct Sidebar_Previews: PreviewProvider {
     struct Preview: View {
         @State private var selection: Panel? = Panel.truck
         var body: some View {
-            Sidebar(selection: $selection)
+            Sidebar(selection: $selection).inertiaEditable()
         }
     }
     

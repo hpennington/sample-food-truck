@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -30,7 +31,7 @@ struct CardNavigationHeader<Label: View>: View {
             Spacer()
         }
         .buttonStyle(.borderless)
-        .labelStyle(.cardNavigationHeader)
+        .labelStyle(.cardNavigationHeader).inertiaEditable()
     }
 }
 

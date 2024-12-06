@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -81,7 +82,7 @@ struct SubscriptionStoreView: View {
             controller.purchaseError?.errorDescription ?? "",
             isPresented: $errorAlertIsPresented,
             actions: {}
-        )
+        ).inertiaEditable()
     }
     
     var dismissButton: some View {
@@ -153,7 +154,7 @@ struct SubscriptionStoreHeaderView: View {
         }
         .padding(.top, 5)
         .padding(.bottom, 30)
-        .foregroundColor(.white)
+        .foregroundColor(.white).inertiaEditable()
     }
     
 }
@@ -175,7 +176,7 @@ struct SubscriptionStoreOptionsView: View {
             ForEach(subscriptions) { subscription in
                 subscriptionOptionCell(for: subscription)
             }
-        }
+        }.inertiaEditable()
     }
 
     func subscriptionOptionCell(for subscription: Subscription) -> some View {
@@ -279,7 +280,7 @@ struct SubscriptionOptionView: View {
             in: Self.backgroundShape.scale(0.99)
         )
         .padding(.horizontal)
-        .padding(.vertical, 5)
+        .padding(.vertical, 5).inertiaEditable()
     }
     
     private var checkmarkImage: some View {
@@ -364,7 +365,7 @@ struct SubscriptionPurchaseView: View {
             Task(priority: .utility) { @MainActor in
                 canRedeemIntroOffer = await selectedSubscription.isEligibleForIntroOffer
             }
-        }
+        }.inertiaEditable()
     }
 
 }

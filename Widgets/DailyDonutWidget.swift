@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -20,7 +21,7 @@ struct DailyDonutWidget: Widget {
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
         #endif
         .configurationDisplayName("Daily Donut")
-        .description("Showcasing the latest trending donuts.")
+        .description("Showcasing the latest trending donuts.").inertiaEditable()
     }
     
     struct Provider: TimelineProvider {
@@ -113,7 +114,7 @@ struct DailyDonutWidgetView: View {
             
         default:
             Text("Unsupported!")
-        }
+        }.inertiaEditable()
     }
 }
 

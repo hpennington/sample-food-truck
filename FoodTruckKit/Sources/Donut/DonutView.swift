@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -50,7 +51,7 @@ public struct DonutView: View {
             .aspectRatio(1, contentMode: .fit)
             .compositingGroup()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-        }
+        }.inertiaEditable()
     }
 }
 

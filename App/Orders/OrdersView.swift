@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -65,7 +66,7 @@ struct OrdersView: View {
         .searchable(text: $searchText)
         .sheet(item: $completedOrder) { order in
             OrderCompleteView(order: order)
-        }
+        }.inertiaEditable()
     }
     
     var list: some View {
@@ -142,7 +143,7 @@ struct OrdersView_Previews: PreviewProvider {
         @StateObject private var model = FoodTruckModel.preview
         
         var body: some View {
-            OrdersView(model: model)
+            OrdersView(model: model).inertiaEditable()
         }
     }
     

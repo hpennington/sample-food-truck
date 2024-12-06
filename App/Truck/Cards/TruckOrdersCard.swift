@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -76,7 +77,7 @@ struct TruckOrdersCard: View {
                     }
                 }
             }
-        }
+        }.inertiaEditable()
     }
 }
 
@@ -142,7 +143,7 @@ struct TruckOrdersCard_Previews: PreviewProvider {
     struct Preview: View {
         @StateObject private var model = FoodTruckModel()
         var body: some View {
-            TruckOrdersCard(model: model)
+            TruckOrdersCard(model: model).inertiaEditable()
         }
     }
     

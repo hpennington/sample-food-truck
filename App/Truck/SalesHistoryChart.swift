@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -40,7 +41,7 @@ struct SalesHistoryChart: View {
                 AxisTick()
                 AxisGridLine()
             }
-        }
+        }.inertiaEditable()
     }
 }
 
@@ -60,7 +61,7 @@ struct SalesHistoryChart_Previews: PreviewProvider {
     struct Preview: View {
         @StateObject private var model = FoodTruckModel()
         var body: some View {
-            SalesHistoryView(model: model)
+            SalesHistoryView(model: model).inertiaEditable()
         }
     }
     static var previews: some View {

@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -17,7 +18,7 @@ struct TopFiveDonutsChart: View {
     }
     
     var body: some View {
-        TopDonutSalesChart(sales: topSales)
+        TopDonutSalesChart(sales: topSales).inertiaEditable()
     }
 }
 
@@ -27,7 +28,7 @@ struct TopFiveDonutsChart_Previews: PreviewProvider {
         @StateObject private var model = FoodTruckModel()
         
         var body: some View {
-            TopFiveDonutsChart(model: model, timeframe: timeframe)
+            TopFiveDonutsChart(model: model, timeframe: timeframe).inertiaEditable()
         }
     }
     static var previews: some View {

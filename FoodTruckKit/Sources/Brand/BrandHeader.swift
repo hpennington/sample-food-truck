@@ -1,3 +1,4 @@
+import Inertia
 /*
 See the LICENSE.txt file for this sample’s licensing information.
 
@@ -83,7 +84,7 @@ public struct BrandHeader: View {
             }
             .padding(.top, -200 * headerSize.rawValue) // bleed into top safe area
         }
-        .frame(height: 200 * headerSize.rawValue) // but only take up 200 height
+        .frame(height: 200 * headerSize.rawValue).inertiaEditable()
     }
 }
 

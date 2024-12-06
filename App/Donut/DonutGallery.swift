@@ -65,7 +65,7 @@ struct DonutGallery: View {
         }
         .navigationDestination(for: String.self) { _ in
             DonutEditor(donut: $model.newDonut)
-        }
+        }.padding()
     }
     
     var grid: some View {
@@ -173,6 +173,7 @@ struct DonutBakery_Previews: PreviewProvider {
 
         var body: some View {
             DonutGallery(model: model)
+                .padding()
         }
     }
 

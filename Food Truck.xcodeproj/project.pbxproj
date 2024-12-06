@@ -117,6 +117,8 @@
 		F86D7A132CDF005400C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F86D7A162CDF02BB00C6E29C /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F817FB282CDEF4C500C6F630 /* ActivityKit.framework */; };
 		F899F6522D03A87500CE9EEB /* Inertia in Frameworks */ = {isa = PBXBuildFile; productRef = F899F6512D03A87500CE9EEB /* Inertia */; };
+		F899F6542D03A97000CE9EEB /* Inertia in Frameworks */ = {isa = PBXBuildFile; productRef = F899F6532D03A97000CE9EEB /* Inertia */; };
+		F899F6562D03A97400CE9EEB /* Inertia in Frameworks */ = {isa = PBXBuildFile; productRef = F899F6552D03A97400CE9EEB /* Inertia */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F899F6542D03A97000CE9EEB /* Inertia in Frameworks */,
 				F86D7A162CDF02BB00C6E29C /* ActivityKit.framework in Frameworks */,
 				E0510763283C187300FCE3E6 /* FoodTruckKit in Frameworks */,
 			);
@@ -245,6 +248,7 @@
 				E0C37C4E2823515A007B925B /* FoodTruckKit in Frameworks */,
 				E0C37C3628234145007B925B /* SwiftUI.framework in Frameworks */,
 				E0C37C3428234145007B925B /* WidgetKit.framework in Frameworks */,
+				F899F6562D03A97400CE9EEB /* Inertia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +474,7 @@
 			name = "Food Truck All";
 			packageProductDependencies = (
 				E0510733283C187300FCE3E6 /* FoodTruckKit */,
+				F899F6532D03A97000CE9EEB /* Inertia */,
 			);
 			productName = "Food Truck";
 			productReference = E051076C283C187300FCE3E6 /* Food Truck All.app */;
@@ -511,6 +516,7 @@
 			name = Widgets;
 			packageProductDependencies = (
 				E0C37C4D2823515A007B925B /* FoodTruckKit */,
+				F899F6552D03A97400CE9EEB /* Inertia */,
 			);
 			productName = WidgetsExtension;
 			productReference = E0C37C3228234145007B925B /* Widgets.appex */;
@@ -1183,6 +1189,16 @@
 		};
 		F899F6512D03A87500CE9EEB /* Inertia */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = Inertia;
+		};
+		F899F6532D03A97000CE9EEB /* Inertia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F899F6502D03A87500CE9EEB /* XCLocalSwiftPackageReference "../inertia-pro/runtime-swift/Inertia" */;
+			productName = Inertia;
+		};
+		F899F6552D03A97400CE9EEB /* Inertia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F899F6502D03A87500CE9EEB /* XCLocalSwiftPackageReference "../inertia-pro/runtime-swift/Inertia" */;
 			productName = Inertia;
 		};
 /* End XCSwiftPackageProductDependency section */
